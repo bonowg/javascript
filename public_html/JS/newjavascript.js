@@ -9,6 +9,8 @@ var div = document.getElementById("glowny");
 
 div.innerHTML = "<H1>OKOKOK</H1>"
 
+// pierwsza wersja
+/*
 var obj = {
     imie: "wojtek",
     nazwisko: "golebiewski",
@@ -19,7 +21,24 @@ var obj = {
     toString: function()
     {
         return this.nazwisko + " - " + this.imie
-    },
+    }
 };
+*/
+// druga wersja
+
+var obj = new Object({
+    imie: "wojtekk",
+    nazwisko: "golebiewski",
+    getinfo: function()
+    {
+        return this.imie + " - " + this.nazwisko
+    },
+    toString: function()
+    {
+        return this.nazwisko + " - " + this.imie
+    }       
+        
+        
+});
 
 div.innerHTML += obj
