@@ -9,7 +9,7 @@ var div = document.getElementById("glowny");
 
 div.innerHTML = "<H1>OKOKOK</H1>"
 
-// pierwsza wersja
+// pierwsza wersja lepsza !!
 /*
 var obj = {
     imie: "wojtek",
