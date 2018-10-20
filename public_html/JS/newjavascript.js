@@ -15,7 +15,11 @@ var obj = {
     getinfo: function()
     {
         return this.imie + " - " + this.nazwisko
-    }
+    },
+    toString: function()
+    {
+        return this.nazwisko + " - " + this.imie
+    },
 };
 
-div.innerHTML += obj.getinfo()
+div.innerHTML += obj
