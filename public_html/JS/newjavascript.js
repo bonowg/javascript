@@ -25,7 +25,7 @@ var obj = {
 };
 */
 // druga wersja
-
+/*
 var obj = new Object({
     imie: "wojtekk",
     nazwisko: "golebiewski",
@@ -40,5 +40,19 @@ var obj = new Object({
         
         
 });
+*/
 
-div.innerHTML += obj
+// funkcja konstrukcyjna
+
+function osoba(name, surrname)
+{
+    this.name = name;
+    this.surrname = surrname;
+    this.toString = function()
+    {
+        return this.name + " - " + this.surrname;
+    }
+}
+
+var wojo = new osoba("Woojo", "Golebiewksi")
+div.innerHTML += wojo
