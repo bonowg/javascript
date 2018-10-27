@@ -2,3 +2,9 @@
 *.json
 
 *.xml
+
+nbproject/project\.properties
+
+nbproject/private/private\.properties
+
+\.bowerrc

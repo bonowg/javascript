@@ -43,16 +43,41 @@ var obj = new Object({
 */
 
 // funkcja konstrukcyjna
+//
+//function osoba(name, surrname)
+//{
+//    this.name = name;
+//    this.surrname = surrname;
+//    this.toString = function()
+//    {
+//        return this.name + " - " + this.newValue;
+//    }
+//}
+//
+//var wojo = new osoba("Woojo", "Golebiewksi");
+//var mirka = new osoba("Mirka", "Golebiewska");
+//
+//osoba.prototype.newValue = 123;
+//
+//div.innerHTML += wojo + "<br/>" + mirka
 
-function osoba(name, surrname)
-{
-    this.name = name;
-    this.surrname = surrname;
-    this.toString = function()
-    {
-        return this.name + " - " + this.surrname;
-    }
-}
 
-var wojo = new osoba("Woojo", "Golebiewksi")
-div.innerHTML += wojo
+// tablice
+
+var tablica1 = [];
+tablica1.push("sdf")
+tablica1.push("dsf")
+div.innerHTML += tablica1[tablica1.length-1]
+
+//tablica assocjacyjne
+
+var tablica2 = [];
+tablica2["imie"] = "Wojciech";
+
+div.innerHTML += tablica2["imie"];
+
+var listazestrony = document.getElementById("lista");
+
+var LiArray = listazestrony.getElementsByTagName("li");
+
+div.innerHTML += "<br/>"+LiArray[1].innerHTML;
